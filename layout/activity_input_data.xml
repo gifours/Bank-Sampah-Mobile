@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".InputDataActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@color/white"
+                android:src="@drawable/ic_kembali"
+                android:paddingLeft="30dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:paddingLeft="30dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Pilihan\nBank Sampah"
+                android:textColor="@color/hitam_teks"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton"/>
+
+            <HorizontalScrollView
+                android:id="@+id/tanggalan"
+                android:foregroundGravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/tvRekomendasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:paddingLeft="32dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Rekomendasi"
+                android:textColor="@color/hitam_teks"
+                android:textSize="15sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tanggalan"/>
+
+
+            <LinearLayout
+                android:id="@+id/lrek1"
+                android:clickable="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvRekomendasi">
+
+                <ImageView
+                    android:id="@+id/btn_gambar1"
+                    android:src="@drawable/thumbnail_bank_sampah_nogolaten2"
+                    android:layout_width="129dp"
+                    android:layout_height="115dp"/>
+
+                <LinearLayout
+                    android:paddingLeft="12dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Bank Sampah Surolaras"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/hitam_teks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                    <LinearLayout
+                        android:layout_marginTop="6dp"
+                        android:padding="6dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/ic_rating"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"/>
+
+                        <TextView
+                            android:text="4.8/5.0"
+                            android:textSize="11sp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/hitam_teks"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lrek2"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lrek1">
+
+                <ImageView
+                    android:src="@drawable/thumbnail_bank_sampah_sleman2"
+                    android:layout_width="129dp"
+                    android:layout_height="115dp"/>
+
+                <LinearLayout
+                    android:paddingLeft="12dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Bank Sampah Suryo Gresik"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/hitam_teks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+                        <LinearLayout
+                            android:layout_marginTop="6dp"
+                            android:padding="6dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/ic_rating"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"/>
+
+                            <TextView
+                                android:text="4.8/5.0"
+                                android:textSize="11sp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="2dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/hitam_teks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lrek3"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="32dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/lrek2">
+
+                <ImageView
+                    android:src="@drawable/thumbnail_bank_sampah_kaliurang2"
+                    android:layout_width="129dp"
+                    android:layout_height="115dp"/>
+
+                <LinearLayout
+                    android:paddingLeft="12dp"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Bank Sampah Berseri"
+                        android:textSize="14sp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:textColor="@color/hitam_teks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:layout_marginTop="6dp"
+                            android:padding="6dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:src="@drawable/ic_rating"
+                                android:layout_width="15dp"
+                                android:layout_height="15dp"/>
+
+                            <TextView
+                                android:text="4.8/5.0"
+                                android:textSize="11sp"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="2dp"
+                                android:fontFamily="@font/poppins_regular"
+                                android:textColor="@color/hitam_teks"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lrek3"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="4dp"
+        android:elevation="5dp"
+        android:weightSum="3"
+        android:background="@color/putih_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ic_rumah2"
+                android:src="@drawable/ic_rumah"
+                android:layout_width="22dp"
+                android:layout_height="25dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:src="@drawable/ic_transaksi_selected"
+                android:layout_width="33dp"
+                android:layout_height="33dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ic_profil2"
+                android:src="@drawable/ic_profil"
+                android:layout_width="22dp"
+                android:layout_height="25dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
